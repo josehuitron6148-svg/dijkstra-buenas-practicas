@@ -2,6 +2,7 @@
 
 Combina la gestión de persistencia en CSV, visualización tabular y el cálculo
 de rutas óptimas mediante el algoritmo de Dijkstra en un único punto de entrada.
+
 """
 
 import csv
@@ -54,7 +55,7 @@ def guardar_conexion_csv(ruta_archivo: str, origen: str, destino: str, peso: flo
 
 
 def inicializar_estado() -> None:
-    """Carga el grafo en la sesión de Streamlit una sola vez al iniciar."""
+    """Inicialización de Streamlit una sola vez al iniciar."""
     if "grafo" not in st.session_state:
         st.session_state.grafo = cargar_grafo_desde_csv(ARCHIVO_CSV)
 
