@@ -1,3 +1,8 @@
+# Título: Motor Lógico de Grafos y Algoritmo de Dijkstra
+# Autor: José Carlos Isaí Huitrón Barrón
+# Fecha: 2026-11-14
+# Descripción: Implementa la estructura Grafo y el cálculo de rutas mínimas.
+
 import heapq
 from typing import Dict, List, Optional, Tuple
 
